@@ -1,0 +1,38 @@
++{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    border: 1px solid black;
+    font-family: sans-serif;
+}
+
+header {
+    height: 18%;
+    border: 1px solid black;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+footer {
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+.link-conteiner{
+    border: 1px solid black;
+    justify-content: center;
+}
