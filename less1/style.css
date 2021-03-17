@@ -48,6 +48,20 @@ footer {
     flex-wrap: wrap;
 }
 
+@media (max-width: 800px) {
+    footer {
+        height: 20%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link-conteiner {
+        margin: 10px 20px 30px 20px;
+        border: 1px solid black;
+    }
+}
+
 a {
     text-decoration: none;
     justify-content: center;
