@@ -41,25 +41,23 @@ footer {
     flex-wrap: wrap;
 }
 
-@media (max-width: 800px) {
-    footer {
-        flex-direction: column;
-    }
+.link-container {
+    margin: 10px 20px 30px 20px;
+    border: 1px solid black;
+    max-width: 90px;
+    text-align: center;
+    list-style-type: none;
+    float: left;
+}
 
-    .link-conteiner {
+@media (max-width: 800px) {
+    .link-container {
         margin: 10px 20px 10px 20px;
-        border: 1px solid black;
-        max-width: 90px;
-        text-align: center;
+        float: none;
     }
 }
 
 a {
     text-decoration: none;
     padding: 0 5px;
-}
-
-.link-conteiner {
-    margin: 10px 20px 30px 20px;
-    border: 1px solid black;
 }
