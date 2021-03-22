@@ -1,6 +1,6 @@
 {
   "name": "todo",
-  "tupe": "module",
+  "type": "module",
   "version": "1.0.0",
   "description": "(todo app)",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "hw"
   },
-  "author": "",
+  "author": "Serhiy Andryeyev",
   "license": "ISC"
 }
 
