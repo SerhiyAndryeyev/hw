@@ -25,4 +25,17 @@
 
 .todo-item-1 {
   border: 1px solid rgb(195, 142, 166);
+  width: 260px;
+}
+
+input[type="text"],
+.button {
+  box-sizing: border-box;
+}
+
+.button {
+  color: #fff;
+  background-color: #a0dfa080;
+  font-weight: bold;
+  border-radius: 50%;
 }
