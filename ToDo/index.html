@@ -8,13 +8,24 @@
     <link rel="stylesheet" href="src/css/todo/index.css" />
   </head>
   <body>
+    <!-- START OF CODE  -->
     <div class="todo-wrapper">
-      <!-- START OF CODE  -->
       <div class="todo-container">
         <h1>To do list:</h1>
-        <input class="todo-item-1" type="text" />
+        <div class="todo-item-1">
+          <input type="text" />
+          <input class="button-add" type="button" value="+" />
+        </div>
+        <!-- TODO REUSABLE ITEM -->
+        <div class="todo-item-reusable">
+          <label>
+            <input type="checkbox" />
+            Play with Oli
+            <button class="btn-delete">Delete</button>
+          </label>
+        </div>
       </div>
-      <!-- END OF CODE -->
     </div>
+    <!-- END OF CODE -->
   </body>
 </html>
