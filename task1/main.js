@@ -16,18 +16,30 @@ const towns = {
 
 function calculateGDP(object) {
   const gdpOfTown = {};
-  for (const key in object) {
-    if (Object.hasOwnProperty.call(object, key)) {
-      const element = object[key];
-      console.log(element);
-      const gdpOfTownCalculation = element.balance / element.population;
-      gdpOfTown.element = gdpOfTownCalculation;
-      console.log(gdpOfTownCalculation);
-      console.log(gdpOfTown);
-    }
-  }
+  const entries = Object.entries(object);
+  entries.forEach((entry) => {
+    let key = entry[0];
+    let value = entry[1];
+    let gdpOfTownCalculation = value.balance / value.population;
+    console.log(gdpOfTownCalculation);
+  });
+  return gdpOfTown;
 }
 console.log(calculateGDP(towns));
+
+// function calculateGDP(object) {
+//   const gdpOfTown = {};
+//   for (const key in object) {
+//     if (Object.hasOwnProperty.call(object, key)) {
+//       const element = object[key];
+//       console.log(element);
+//       const gdpOfTownCalculation = element.balance / element.population;
+//       gdpOfTown.element = gdpOfTownCalculation;
+//       console.log(gdpOfTownCalculation);
+//       console.log(gdpOfTown);
+//     }
+//   }
+// }
 
 // function calculateGDP(object) {
 //   const gdpOfTown = {};
