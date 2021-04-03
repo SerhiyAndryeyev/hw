@@ -22,6 +22,7 @@ function calculateGDP(object) {
     let value = entry[1];
     let gdpOfTownCalculation = value.balance / value.population;
     console.log(gdpOfTownCalculation);
+    gdpOfTown[key] = gdpOfTownCalculation;
   });
   return gdpOfTown;
 }
