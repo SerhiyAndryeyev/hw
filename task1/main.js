@@ -14,28 +14,33 @@ const towns = {
   },
 };
 
-// function calculateGDP(object) {
-//   for (const key in object) {
-//     if (Object.hasOwnProperty.call(object, key)) {
-//       const element = object[key];
-//       console.log(element);
-//     }
-//   }
-// }
-
 function calculateGDP(object) {
   const gdpOfTown = {};
-  Object.keys(object).forEach((key) => {
-    let value = object[key];
-    let gdpOfTownCalculation = value.balance / value.population;
-    let town = key;
-    gdpOfTown.town = gdpOfTownCalculation;
-    console.log(key);
-    console.log(town);
-    console.log(value);
-    console.log(gdpOfTown);
-    console.log(gdpOfTownCalculation);
-  });
-  return gdpOfTown;
+  for (const key in object) {
+    if (Object.hasOwnProperty.call(object, key)) {
+      const element = object[key];
+      console.log(element);
+      const gdpOfTownCalculation = element.balance / element.population;
+      gdpOfTown.element = gdpOfTownCalculation;
+      console.log(gdpOfTownCalculation);
+      console.log(gdpOfTown);
+    }
+  }
 }
 console.log(calculateGDP(towns));
+
+// function calculateGDP(object) {
+//   const gdpOfTown = {};
+//   Object.keys(object).forEach((key) => {
+//     let value = object[key];
+//     let gdpOfTownCalculation = value.balance / value.population;
+//     let town = key;
+//     gdpOfTown.town = gdpOfTownCalculation;
+//     console.log(key);
+//     console.log(town);
+//     console.log(value);
+//     console.log(gdpOfTown);
+//     console.log(gdpOfTownCalculation);
+//   });
+//   return gdpOfTown;
+// }
